@@ -1,0 +1,151 @@
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#000000, #2a2929);
+  background-repeat: no-repeat;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.single-item {
+  margin-top: 3rem;
+}
+
+.single-item img {
+  height: 200px;
+}
+
+.outer {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  background: transparent
+    url("http://assets.iceable.com/img/noise-transparent.png") repeat 0 0;
+  background-repeat: repeat;
+  animation: bg-animation 0.2s infinite;
+  opacity: 0.9;
+  visibility: visible;
+}
+
+@keyframes bg-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -5%);
+  }
+  20% {
+    transform: translate(-10%, 5%);
+  }
+  30% {
+    transform: translate(5%, -10%);
+  }
+  40% {
+    transform: translate(-5%, 15%);
+  }
+  50% {
+    transform: translate(-10%, 5%);
+  }
+  60% {
+    transform: translate(15%, 0);
+  }
+  70% {
+    transform: translate(0, 10%);
+  }
+  80% {
+    transform: translate(-15%, 0);
+  }
+  90% {
+    transform: translate(10%, 5%);
+  }
+  100% {
+    transform: translate(5%, 0);
+  }
+}
+
+.barraSuperior {
+  height: 200px;
+  margin-top: 10px;
+}
+
+.senhaAtual {
+  text-align: center;
+  border-radius: 15px;
+  background: #c600008c;
+  box-shadow: 0 8px 32px 0 rgba(69, 53, 62, 0.37);
+  backdrop-filter: blur(18.5px);
+  -webkit-backdrop-filter: blur(18.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #fff;
+  margin-top: 0px;
+}
+
+.senhaAtualTexto {
+  font-size: 65pt;
+  font-weight: 400;
+}
+
+#senhaAtualNumero {
+  font-size: 100pt;
+  font-weight: 800;
+}
+
+.ultimaSenha {
+  margin-right: 45px;
+  flex-direction: column;
+  font-weight: 800;
+  text-align: center;
+  background: rgba(35, 35, 35, 0.65);
+  box-shadow: 0 8px 32px 0 rgba(102, 91, 91, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 200px;
+  height: 150px;
+  margin-top: 20px;
+}
+
+#ultimaSenhaTexto {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+#ultimaSenhaNumero {
+  font-size: 40px;
+  color: #c600008c;
+}
+
+.uespiLogo {
+  max-width: 100px;
+}
+
+.sisuLogo {
+  max-width: 400px;
+}
+
+.uespiTexto {
+  font-size: 27pt;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.subtitulo {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+audio {
+  display: none;
+}
