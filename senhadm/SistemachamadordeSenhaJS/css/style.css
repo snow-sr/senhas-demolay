@@ -146,6 +146,17 @@ body {
   font-weight: 400;
 }
 
+.logo {
+  /* margem o suficiente para todas as imagens ficarem a mostra, padronizar tamanho da imagem */
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  /* tamanho da imagem */
+  width: 100px;
+  height: 100px;
+}
+
 audio {
   display: none;
 }
